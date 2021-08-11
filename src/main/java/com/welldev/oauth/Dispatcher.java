@@ -10,7 +10,7 @@ public class Dispatcher extends AbstractAnnotationConfigDispatcherServletInitial
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[]{SecurityConfigForCustomServer.class,BeanBag.class,CustomAuthServer.class};
+        return new Class[]{WebSecurityConfig.class,BeanBag.class,CustomAuthServer.class};
     }
 
     @Override
